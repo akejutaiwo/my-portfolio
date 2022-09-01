@@ -1,0 +1,15 @@
+    .brand{
+        max-height: 10vh;
+    }
+    .menu {
+    }
+
+
+   .navcas {
+        display: flex;
+        color: white !important;
+        text-transform: uppercase;
+        gap: 1rem;
+        list-style: none;
+        max-height: 20vh;
+    }
