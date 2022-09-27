@@ -1,0 +1,20 @@
+.Contact{
+    max-width: 600px;
+    margin: 0 auto 100px;
+    text-align: center;
+    padding-top: 5rem;
+}
+
+.what {
+    display: block;
+    margin-bottom: 20px;
+    color: var(--green);
+    font-family: var(--font-mono);
+    font-size: var(--fz-md);
+    font-weight: 400;
+}
+.text {
+    font-size: var(--fz-md);
+}
+
+@media screen and (max-width: 480px)

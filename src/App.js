@@ -1,20 +1,15 @@
-
+import React from 'react';
 import './App.css';
-import About from './Components/About/About';
-import Header from './Components/Header/Header';
-import Intro from './Components/Intro/Intro';
-import Service from './Components/Services/Service';
-// import Intro from './Components/Intro/intro';
+import { Content, Header, LeftSide, RightSide } from './Components/Icons';
 
 
 function App() {
   return (
     <div className="App">
       <Header />
-     <Intro />
-     <About />
-     <Service />
-     
+      <LeftSide />
+      <RightSide/>
+      <Content/>
     </div>
   );
 }
