@@ -125,7 +125,6 @@ img:hover {
   .inner{
     flex-direction: column;
     text-align: center;
-    margin-bottom: 2rem;
+    margin-bottom: 8rem;
   }
-  
 }

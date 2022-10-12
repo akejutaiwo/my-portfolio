@@ -5,6 +5,7 @@ export { default as RightSide } from '../Side/RightSide';
 export { default as Footer } from '../Footer/Footer';
 export { default as About } from '../About/About';
 export { default as Intro } from '../Intro/Intro';
+export { default as Projects } from '../Projects/Projects.jsx';
 export { default as Contact } from '../Contact/Contact';
 export { default as Content } from '../Content/Content';
 export { default as IconTwitter } from '../Icons/twitter';

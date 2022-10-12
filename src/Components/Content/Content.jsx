@@ -1,5 +1,5 @@
 import React from 'react'
-import { About, Contact, Footer, Intro } from '../Icons'
+import { About, Contact, Footer, Intro, Projects } from '../Icons'
 
 
 const Content = () => {
@@ -8,6 +8,7 @@ const Content = () => {
         <div className="container">
             <Intro/>
             <About />
+            <Projects />
             <Contact/>
             <Footer/>
         </div>
