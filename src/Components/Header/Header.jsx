@@ -3,6 +3,7 @@ import './Header.css'
 import { useState } from 'react'
 import { navLinks } from '../config';
 import { Link } from 'react-scroll';
+import Resume from '../Header/AkejuResume.pdf'
 
 const Header = () => {
     const [ isNavExpanded, setIsNavExpanded ] = useState(false);
@@ -15,7 +16,7 @@ const Header = () => {
       </div>
     )
     const ResumeLink = (
-      <a href="/" className="button">
+      <a href={Resume} className="button">
         Resume
       </a>
     )
