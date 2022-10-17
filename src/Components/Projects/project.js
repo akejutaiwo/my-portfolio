@@ -1,19 +1,20 @@
 import music from '../../img/musicapp.png'
 import chat from '../../img/Chat-WebApp.png'
+// import { IconGitHub } from '../Icons';
 
 const project = [
     {
         id: 1, 
         overline:'Project',
         title: 'Web Chat App',
-        description: 'A minimal, dark blue theme for VS Code, Sublime Text, Atom, iTerm, and more. Available on Visual Studio Marketplace, Package Control, Atom Package Manager, and npm.',
+        description: 'A web Application chatting app for friends and family integrate with node, Mongose',
         tech: [ 
             'React', 
             'Mongoose', 
             'Css', 
             'Node' 
         ],
-        link: '',
+        link: 'https://github.com/akejutaiwo/Chat-App' ,
         image: chat
     },
     {
@@ -26,7 +27,7 @@ const project = [
         'Styled-Components', 
         'css' 
         ],
-        link: '',
+        link:'https://github.com/akejutaiwo/music-webapp' ,
         image: music
     }, 
 

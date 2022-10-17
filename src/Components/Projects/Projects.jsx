@@ -1,4 +1,5 @@
 import React from 'react'
+import IconGitHub from '../Icons/github.js'
 import project from './project.js'
 import './Projects.js'
 import { StyledProject, StyledProjectsGrid } from './Projects.js'
@@ -8,9 +9,8 @@ const Projects = () => {
   return (
     <>
     <section id='projects'>
-      <h2 className="numbered-heading">
-        Some things I've built
-      </h2>
+      <h2 className='numbered-heading'>Some things I've built</h2>
+
       <StyledProjectsGrid>
           { project.map((item ) => (
             <StyledProject key={item.id}>
@@ -26,8 +26,10 @@ const Projects = () => {
                         <li key={i} >{tech}</li>
                     ))}
                   </ul>
-                  <div className="project-links">
-
+                  <div className="project-links" aria-label='Github Link'>
+                      <a href={item.link}>
+                        <IconGitHub/>
+                      </a>
                   </div>
                 </div>
               </div>

@@ -96,10 +96,10 @@ a {
   transition: var(--transition);
 }
 .button:hover{
-  background: white;
+  background-color: #233554;
   cursor: pointer;
   color: var(--orange);
-  border: 1px solid var(--orange);
+  border: 1px solid var(--green);
 }
 svg {
   width: 100%;

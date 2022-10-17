@@ -120,6 +120,12 @@ img:hover {
     transition: none;
   }
 }
+@media screen and (max-width: 768px) {
+  .about {
+    position: relative;
+    
+  }
+}
 
 @media screen and (max-width: 480px) {
   .inner{

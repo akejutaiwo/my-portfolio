@@ -1,17 +1,29 @@
 import React from 'react'
 import './Header.css'
 import { useState } from 'react'
+import { navLinks } from '../config';
+import { Link } from 'react-scroll';
 
 const Header = () => {
     const [ isNavExpanded, setIsNavExpanded ] = useState(false);
+
+    const Logo = (
+      <div className="logo" tabIndex='-1'>
+        <a href='/' aria-label='home'>
+          TA
+        </a>
+      </div>
+    )
+    const ResumeLink = (
+      <a href="/" className="button">
+        Resume
+      </a>
+    )
+
   return (
-    <header className='header' > 
+    <header className='header'> 
       <nav className="navigation">
-        <div className="logo">
-          <a href="/" aria-label='home'>
-            Taiwo Akeju
-          </a>
-          </div>
+        {Logo}
         <button
           className="hamburger"
           onClick={() => {
@@ -37,25 +49,14 @@ const Header = () => {
             isNavExpanded ? "navigation-menu expanded" : "navigation-menu"
           }
         >
-          <ul>
-            <li>
-              <a href="/home">About</a>
-            </li>
-            <li>
-              <a href="/about">Experience</a>
-            </li>
-            <li>
-              <a href="/contact">Work</a>
-            </li>
-            <li>
-              <a href="/contact">Contact</a>
-            </li>
-
-            <button className="button">
-              <a href='/'>Resume</a>
-            </button>
-
-          </ul>
+          <ol className='Links'>
+            {navLinks.map(({url, name}, i) => (
+             <li key={i}>
+              <Link activeClass='active' spy={true} to={url}>{name}</Link>
+             </li>
+            ))}
+            {ResumeLink}
+          </ol>
         </div>
       </nav>
     </header>

@@ -14,7 +14,6 @@ const StyledFooter = styled.footer`
     padding: 15px;
     text-align: center;
 `;
- 
 
 const StyledSocialLinks = styled.div`
   display: none;

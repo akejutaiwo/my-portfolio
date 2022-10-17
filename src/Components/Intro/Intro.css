@@ -9,6 +9,8 @@
     padding: 0px;
     margin: 0 auto;
     max-width: 1000px;
+    position: relative;
+    top: -4rem;
 }
 
 .intro h1 {
@@ -59,9 +61,30 @@
 }
 
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 768px) {
     .intro {
-        margin: 0 auto;
-        max-width: 450px;
+
+        display: flex;
+        -moz-box-pack: center;
+        justify-content: center;
+        -moz-box-align: center;
+        flex-direction: column;
+        align-items: flex-start;
+        min-height: 100vh;
+        padding: 0px;
+        position: relative;
+        top: -6rem;
+    }
+    .front > h2 {
+        margin: 0px;
+        font-size: clamp(40px, 8vw, 80px);
+    }
+    .intro h3{
+        margin: 0px;
+        font-size: clamp(30px, 8vw, 80px);
+    }
+    .intro p {
+        margin: 20px 0px 0px;
+        max-width: 540px;
     }
 }
