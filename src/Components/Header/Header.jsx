@@ -3,7 +3,7 @@ import './Header.css'
 import { useState } from 'react'
 import { navLinks } from '../config';
 import { Link } from 'react-scroll';
-import Resume from '../Header/AkejuResume.pdf'
+import Resume from '../Header/TAIWOAKEJU.pdf'
 
 const Header = () => {
     const [ isNavExpanded, setIsNavExpanded ] = useState(false);
