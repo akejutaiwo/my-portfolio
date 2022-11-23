@@ -21,7 +21,7 @@ const About = () => {
   
   const skills = ['JavaScript (ES6+)' ,'React', 'Node.js', 'CSS' ]
   return (
-    <div className='about' id='about'>
+    <section className='about' id='about'>
         <h2 className='numbered-heading'>About Me</h2>
         <div className="inner">
             <div className="parag">
@@ -45,7 +45,7 @@ const About = () => {
             </div>
         </div>
     
-    </div>
+    </section>
   )
 }
 
